@@ -1,19 +1,24 @@
 import react from 'react'
 import "./sidebar.css"
 import Sidebox from '../sidebox/sidebox';
+import DataUsageIcon from '@mui/icons-material/DataUsage';
 
 function Sidebar() {
     return (
         <div className='sidebar'>
 
-            <h1 className='sidebar-logo'>LABFULL</h1>
+            <h1 className='sidebar-logo'> <a href="/">LABFULL</a></h1>
 
-            <Sidebox text='Dashboard' />
-            <Sidebox />
-            <Sidebox />
 
-            
-            
+            <div className='sidebar-wrapper'>
+                <Sidebox text='Inventory' icon={<DataUsageIcon/>} />
+        
+            </div>
+
+
+
+
+
 
         </div>
     )

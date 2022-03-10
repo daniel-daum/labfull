@@ -1,16 +1,20 @@
 import react from "react"
 import "./sidebox.css"
+import React from "react";
 
 type sideboxProps = {
-    img?:string;
-    text?:string;
+    icon?: React.ReactNode;
+    text?: string;
 }
 
-function Sidebox(props:sideboxProps){
-    return(
+function Sidebox(props: sideboxProps) {
+    return (
         <div className="sidebox">
 
-            <div className="sidebox-text">{props.text}</div>
+            <div className="sidebox-content">
+                <div className="sidebox-icon">{props.icon}</div>
+                <div className="sidebox-text">{props.text}</div>
+            </div>
 
         </div>
     )

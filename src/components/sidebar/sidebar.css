@@ -1,20 +1,43 @@
 
 .sidebar{
-    width: 18em;
+    width: 16em;
     height: 100vh;
     background-color: white;   
     display: flex;
     flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
 
    
 }
 
-.sidebar-logo{
+/* BLUE VERSION  */
+
+/* .sidebar-logo{
  background: -webkit-linear-gradient(45deg, #1171ef, #17c8eb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   letter-spacing: .2em;
   align-self: center;
-}
+  font-style: italic;
+} */
 
+/* RED VERSION  */
+
+.sidebar-logo{
+  background: -webkit-linear-gradient(45deg, #f72754, #f54b3f);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+   letter-spacing: .2em;
+   align-self: center;
+   font-style: italic;
+   margin-bottom: 2em;
+
+ } 
+
+ .sidebar a {
+   text-decoration: none;
+ }
+
+ 
 
