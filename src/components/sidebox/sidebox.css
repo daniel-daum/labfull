@@ -15,7 +15,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border-left: 3px solid #f54b3f ;
+    border-left: 3px solid #1171ef ;
  
     width:100%;
 }
@@ -27,6 +27,7 @@
 
 .sidebox-icon{
     color: black;
+    
     margin-left: 2.5em;
     margin-right: 1em;
 }

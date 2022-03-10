@@ -12,7 +12,7 @@ function Sidebox(props: sideboxProps) {
         <div className="sidebox">
 
             <div className="sidebox-content">
-                <div className="sidebox-icon">{props.icon}</div>
+                <div className="sidebox-icon">{props.icon} </div>
                 <div className="sidebox-text">{props.text}</div>
             </div>
 
