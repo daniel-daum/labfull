@@ -1,0 +1,7 @@
+.navbar {
+    height: 50vh;
+    width: auto;
+    background: rgb(23, 200, 235);
+    background: linear-gradient(90deg, rgba(23, 200, 235, 1) 0%, rgba(17, 113, 239, 1) 100%);
+
+}

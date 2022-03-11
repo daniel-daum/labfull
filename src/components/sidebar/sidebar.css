@@ -1,13 +1,12 @@
 
 .sidebar{
-    width: 20em;
+    width: 18em;
     height: 100vh;
     background-color: white;   
     display: flex;
     flex-direction: column;
     padding-left: 1em;
     padding-right: 1em;
-
 
    
 }

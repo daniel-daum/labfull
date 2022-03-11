@@ -11,7 +11,7 @@ function Sidebar() {
 
 
             <div className='sidebar-wrapper'>
-                <Sidebox text='Inventory' icon={<DataUsageIcon />} />
+                <Sidebox text='Dashboard' icon={<DataUsageIcon />} />
         
             </div>
 
