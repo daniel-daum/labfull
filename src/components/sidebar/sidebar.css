@@ -52,6 +52,7 @@
   font-weight: 500;
   font-size: .6em;
   margin: .2em;
+  margin-bottom: .4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
