@@ -1,8 +1,9 @@
-import react from "react"
+
 import "./main.css"
 
 import Sidebar from "../sidebar/sidebar"
 import Block from "../block/block"
+import Navbar from "../navbar/navbar"
 
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
@@ -10,6 +11,9 @@ import InventoryIcon from '@mui/icons-material/Inventory';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import PersonIcon from '@mui/icons-material/Person';
 import ScienceIcon from '@mui/icons-material/Science';
+import Avatar from '@mui/material/Avatar';
+
+import { deepOrange } from "@mui/material/colors"
 
 
 function Main() {
@@ -26,8 +30,9 @@ function Main() {
             <div className="wrapper">
 
                 <div className="main-header">
-{/* 
-                    <div className="test"></div> */}
+
+                    {/* <div className="test"></div> */}
+                    <Navbar userName="Obi-Wan Kenobi" userAvatar={<Avatar sx={{width:35, height:35, bgcolor:deepOrange[500]}} />}/>
 
                     <div className="main-blocks">
                         <Block block_text="All Active Orders" block_icon_color="block-icon-wrapper-orange" block_number={3} block_stats_text={`Next order arriving on  ${date}`} block_stats={<ArrowUpwardIcon />} block_icon={<LocalShippingIcon sx={{ fontSize: 28 }} />} />
@@ -36,7 +41,7 @@ function Main() {
                         <Block block_text="Items In Stock" block_icon_color="block-icon-wrapper-red" block_number={345} block_stats_text={`${num} new items recieved this month`} block_stats={<ArrowUpwardIcon />} block_icon={<InventoryIcon />} />
 
 
-                    </div>
+                    </div> 
                 </div>
 
                 {/* <div className="test2"></div> */}

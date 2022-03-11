@@ -1,0 +1,33 @@
+
+
+.search{    
+    border: 2px solid #a0d0f8;
+    border-radius: 1.5em;
+    width: 15em;
+    height: 2.5em;
+    box-shadow: 0 1px 3px rgba(50,50,93,.15),0 1px 0 rgba(0,0,0,.02);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #a0d0f8;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+
+.search-icon{
+    padding-left: .5em;
+    padding-top: .4em;
+}
+
+
+.search-box{
+    font-family: 'Montserrat', sans-serif;
+    background-color: inherit;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    color: #a0d0f8;
+    margin-left: .4em;
+    
+}

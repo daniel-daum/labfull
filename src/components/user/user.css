@@ -1,0 +1,32 @@
+
+
+.user{
+    display: flex;
+    flex-direction: row;  
+    
+    align-items: center;
+    color: white;
+}
+
+.user:hover{
+    cursor: pointer;
+    color: #d9d9d9 ;
+}
+
+.user-avatar{
+    margin: .2em;
+
+
+}
+.user-name{
+    margin: .2em;
+    margin-left: .4em;
+    font-family: 'Montserrat', sans-serif;
+    color: inherit;
+}
+
+.user-name a {
+    text-decoration: none;
+    color: inherit;
+}
+

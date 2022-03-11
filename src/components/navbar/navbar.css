@@ -1,7 +1,38 @@
-.navbar {
-    height: 50vh;
+
+.navbar{
+    
     width: auto;
-    background: rgb(23, 200, 235);
-    background: linear-gradient(90deg, rgba(23, 200, 235, 1) 0%, rgba(17, 113, 239, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    justify-content: flex-start;
+   
 
 }
+
+.navbar-right{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.navbar-title{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 500;
+    justify-self: flex-start;
+}
+
+.navbar-title:hover{
+    color: #d9d9d9;
+    cursor: pointer;
+}
+
+.navbar-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
