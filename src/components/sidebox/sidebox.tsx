@@ -5,6 +5,7 @@ import React from "react";
 type sideboxProps = {
     icon?: React.ReactNode;
     text?: string;
+    icon_color?:string;
 }
 
 function Sidebox(props: sideboxProps) {
@@ -12,7 +13,7 @@ function Sidebox(props: sideboxProps) {
         <div className="sidebox">
 
             <div className="sidebox-content">
-                <div className="sidebox-icon">{props.icon} </div>
+                <div className={props.icon_color}>{props.icon} </div>
                 <div className="sidebox-text">{props.text}</div>
             </div>
 

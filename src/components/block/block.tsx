@@ -1,5 +1,4 @@
 import React from "react"
-import react from "react"
 import "./block.css"
 
 type blockProps = {

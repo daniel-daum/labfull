@@ -1,4 +1,3 @@
-import react from "react"
 import "./navbar.css"
 
 import User from "../user/user"

@@ -15,22 +15,18 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border-left: 3px solid #1171ef ;
  
     width:100%;
 }
 
+
+
 .sidebox-content:hover{
     color: black;
     cursor: pointer;
+    border-left: 3px solid #1171ef ;
 }
 
-.sidebox-icon{
-    color: black;
-    
-    margin-left: 2.5em;
-    margin-right: 1em;
-}
 
 .sidebox-text{
     font-weight: 400;
@@ -39,6 +35,60 @@
 }
 
 
+.sidebox-icon-black{
+    color: black;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+
+.sidebox-icon-blue{
+    color: #5e72e4;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.sidebox-icon-orange{
+    color: #fb6340;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.sidebox-icon-yellow{
+    color: #ffd600;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.sidebox-icon-red{
+    color: #f5365c;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.sidebox-icon-teal{
+    color: #11cdef;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.sidebox-icon-pink{
+    color: #f3a4b5;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.sidebox-icon-grey{
+    color: #7f7f7f;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.sidebox-icon-green{
+    color: #2dce89;
+    margin-left: 2em;
+    margin-right: 1em;
+}
 
 
 

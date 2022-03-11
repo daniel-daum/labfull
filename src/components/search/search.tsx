@@ -1,4 +1,4 @@
-import React, { useState } from 'react';import "./search.css"
+import "./search.css"
 
 import SearchIcon from '@mui/icons-material/Search';
 
