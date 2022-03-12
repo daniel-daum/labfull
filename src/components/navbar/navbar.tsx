@@ -6,6 +6,7 @@ import Search from "../search/search"
 type navbarProps = {
     userName?: string,
     userAvatar?: React.ReactNode
+    pageTitle?:string,
 }
 
 function Navbar(props: navbarProps) {
@@ -13,7 +14,7 @@ function Navbar(props: navbarProps) {
         <div className="navbar">
 
             <div className="navbar-left">
-                <div className="navbar-title"><a href="/">DASHBOARD</a></div>
+                <div className="navbar-title">{props.pageTitle}</div>
 
             </div>
 

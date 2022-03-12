@@ -9,10 +9,16 @@ import PersonIcon from '@mui/icons-material/Person';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import BugReportIcon from '@mui/icons-material/BugReport';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import { Link } from "react-router-dom";
+
+
 
 function Sidebar() {
     return (
+
+        
         <div className='sidebar'>
+        
 
             <div className="sidebar-wrapper">
 
@@ -20,11 +26,11 @@ function Sidebar() {
 
 
                 <div className='sidebar-mid'>
-                    <Sidebox text='Dashboard' icon_color="sidebox-icon-blue" icon={<DataUsageIcon sx={{ fontSize: 25 }} />} />
+                <Link to={"/"}><Sidebox text='Dashboard' icon_color="sidebox-icon-blue" icon={<DataUsageIcon sx={{ fontSize: 25 }} />} /></Link>
                     <Sidebox text='Add Order' icon_color="sidebox-icon-green" icon={<AddIcon sx={{ fontSize: 26 }} />} />
                     <Sidebox text='Active Orders' icon_color="sidebox-icon-orange" icon={<LocalShippingIcon sx={{ fontSize: 26 }} />} />
                     <Sidebox text='Inventory' icon_color="sidebox-icon-red" icon={<ViewListIcon />} />
-                    <Sidebox text='User Profile' icon_color="sidebox-icon-teal" icon={<PersonIcon />} />
+                   <Link to={"/profile"}> <Sidebox text='User Profile' icon_color="sidebox-icon-teal" icon={<PersonIcon />} /> </Link>
 
                 </div>
 
