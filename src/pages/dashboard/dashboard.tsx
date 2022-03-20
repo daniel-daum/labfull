@@ -1,9 +1,9 @@
 
-import "./main.css"
+import "./dashboard.css"
 
-import Sidebar from "../../sidebar/sidebar"
-import Block from "../../block/block"
-import Navbar from "../../navbar/navbar"
+import Sidebar from "../../components/sidebar/sidebar"
+import Block from "../../components/block/block"
+import Navbar from "../../components/navbar/navbar"
 
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import InventoryIcon from '@mui/icons-material/Inventory';
@@ -15,7 +15,7 @@ import Avatar from '@mui/material/Avatar';
 import { deepOrange } from "@mui/material/colors"
 
 
-function Main() {
+function Dashboard() {
 
     let num = 12
 
@@ -52,4 +52,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default Dashboard;
