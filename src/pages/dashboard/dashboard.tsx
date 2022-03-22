@@ -17,9 +17,9 @@ import { deepOrange } from "@mui/material/colors"
 
 function Dashboard() {
 
-    let num = 12
+    const num = 12
 
-    let date = "4/26/2022"
+    const date = "4/26/2022"
     return (
         <div className="main">
 

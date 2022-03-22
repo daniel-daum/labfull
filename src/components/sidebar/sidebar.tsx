@@ -26,7 +26,7 @@ function Sidebar() {
 
 
                 <div className='sidebar-mid'>
-                    <Link to={"/"}><Sidebox text='Dashboard' icon_color="sidebox-icon-blue" icon={<DataUsageIcon sx={{ fontSize: 25 }} />} /></Link>
+                    <Link to={"/dashboard"}><Sidebox text='Dashboard' icon_color="sidebox-icon-blue" icon={<DataUsageIcon sx={{ fontSize: 25 }} />} /></Link>
                     <Link to={"/add_order"}>    <Sidebox text='Add Order' icon_color="sidebox-icon-green" icon={<AddIcon sx={{ fontSize: 26 }} />} /></Link>
                     <Link to={"/active_orders"}>  <Sidebox text='Active Orders' icon_color="sidebox-icon-orange" icon={<LocalShippingIcon sx={{ fontSize: 26 }} />} /></Link>
                     <Link to={"/inventory"}>  <Sidebox text='Inventory' icon_color="sidebox-icon-red" icon={<ViewListIcon />} /></Link>

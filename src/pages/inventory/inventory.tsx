@@ -3,13 +3,16 @@ import "./inventory.css"
 
 import Sidebar from "../../components/sidebar/sidebar";
 import Navbar from "../../components/navbar/navbar";
-import ProfileEditor from "../../components/profile_edit/profile_editor";
 
 import Avatar from '@mui/material/Avatar';
 import { deepOrange } from "@mui/material/colors"
 
+import Blank from "../../components/blank/blank";
+
+
 
 function Inventory() {
+
     return (
         <div className="inventory">
 
@@ -19,8 +22,15 @@ function Inventory() {
 
                 <div className="inventory-header">
                     
-                    <Navbar pageTitle="PROFILE" userName="Obi-Wan Kenobi" userAvatar={<Avatar sx={{width:35, height:35, bgcolor:deepOrange[500]}} />}/>
+                    <Navbar pageTitle="INVENTORY" userName="Obi-Wan Kenobi" userAvatar={<Avatar sx={{width:35, height:35, bgcolor:deepOrange[500]}} />}/>
                   
+                </div>
+
+                <div className="inventory-table">
+
+
+                    <Blank />
+                    
                 </div>
 
                 

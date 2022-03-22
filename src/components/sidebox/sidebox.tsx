@@ -1,4 +1,3 @@
-import react from "react"
 import "./sidebox.css"
 import React from "react";
 
