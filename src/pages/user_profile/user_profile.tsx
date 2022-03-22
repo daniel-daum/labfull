@@ -19,7 +19,7 @@ function User_Profile() {
 
                 <div className="user-profile-header">
                     
-                    <Navbar pageTitle="PROFILE" userName="Obi-Wan Kenobi" userAvatar={<Avatar sx={{width:35, height:35, bgcolor:deepOrange[500]}} />}/>
+                    <Navbar pageTitle="USER PROFILE" userName="Obi-Wan Kenobi" userAvatar={<Avatar sx={{width:35, height:35, bgcolor:deepOrange[500]}} />}/>
               
                 </div>
 

@@ -27,7 +27,12 @@
     border: none;
     text-decoration: none;
     outline: none;
-    color: #a0d0f8;
+    /* color: #a0d0f8; */
+    color: white;
     margin-left: .4em;
     
+}
+
+.search-box::placeholder{
+    color: white;
 }

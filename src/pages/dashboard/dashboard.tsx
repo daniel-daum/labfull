@@ -29,7 +29,7 @@ function Dashboard() {
             <div className="wrapper">
 
                 <div className="main-header">
-                    {/* <div className="test"></div> */}
+                  
                     <Navbar pageTitle="DASHBOARD" userName="Obi-Wan Kenobi" userAvatar={<Avatar sx={{width:35, height:35, bgcolor:deepOrange[500]}} />}/>
                     <div className="main-blocks">
                         <Block block_text="All Active Orders" block_icon_color="block-icon-wrapper-orange" block_number={3} block_stats_text={`Next order arriving on  ${date}`} block_stats={<ArrowUpwardIcon />} block_icon={<LocalShippingIcon sx={{ fontSize: 28 }} />} />

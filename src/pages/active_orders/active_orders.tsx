@@ -18,7 +18,7 @@ function Active_Orders() {
 
                 <div className="active-orders-header">
                     
-                    <Navbar pageTitle="PROFILE" userName="Obi-Wan Kenobi" userAvatar={<Avatar sx={{width:35, height:35, bgcolor:deepOrange[500]}} />}/>
+                    <Navbar pageTitle="ACTIVE ORDERS" userName="Obi-Wan Kenobi" userAvatar={<Avatar sx={{width:35, height:35, bgcolor:deepOrange[500]}} />}/>
                    
                 </div>
 
