@@ -1,24 +1,23 @@
 
 .new-order{
-    width: inherit;
-    height: inherit;
+    width: auto;
     border: 1px solid white;
     background-color: white;
     border-radius: .9em;
     box-shadow: 0 1px 3px rgba(50,50,93,.15),0 1px 0 rgba(0,0,0,.02);
-    height: 70vh;
     position: relative;
     top: -15em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1em;
     margin: 1em;
+    
 }
 
 .new-order-wrapper{
     display: flex;
-    /* width: 100%; */
-    flex-direction: column;
+    flex-direction: row ;
     border: 1px solid red;
     justify-content: center;
 
