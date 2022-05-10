@@ -12,18 +12,17 @@
     align-items: center;
     padding: 1em;
     margin: 1em;
-    
 }
 
-.new-order-wrapper{
+.new-order-form{
     display: flex;
-    flex-direction: row ;
-    border: 1px solid red;
+    flex-direction: column ;
+    /* border: 1px solid red; */
     justify-content: center;
 
 }
 
-.new-order-wrapper input{
+.new-order-form input{
     margin: 1em;
 }
 

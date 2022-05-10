@@ -1,33 +1,53 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import "./new_order.css"
 
 function New_Order() {
+
+    // const [supply_name, setName] = useState("")
+    // const [quantity, setQuantity] = useState("")
+   
+
+    async function submitForm(event: React.FormEvent<HTMLFormElement>) {
+
+        event.preventDefault()
+        
+        const res = await axios.get("http://localhost:3001/data")
+
+        alert(res)
+
+    }
+
+
+
+
 
     return (
         <div className="new-order">
 
             <div className="new-order-title">Add New Order</div>
 
-            <form className="new-order-wrapper" action="#">
+            <form className="new-order-form" onSubmit={submitForm} >
 
-                <div>
-                    <label htmlFor="new-order-item-name">Item Name</label>
-                    <input type="text" placeholder="Product Name" id="item-name" />
+                <label htmlFor="nametest">Supply Name: </label>
+                {/* <input type="text"  id="nametest" onChange={(e) => setName(e.target.value)}/> */}
+
+                {/* <div>
+                    <label htmlFor="new-order-suply-name">Supply Name:</label>
+                    <input type="text" placeholder="Product Name" id="new-order-suply-name" />
                 </div>
 
                 <div>
-                    <label htmlFor="new-order-item-date">Order Date</label>
-                    <input type="date" placeholder="Item Name" id="item-name" />
+                    <label htmlFor="new-order-supply-date">Date Ordered:</label>
+                    <input type="date" placeholder="Item Name" id="new-order-supply-date" />
                 </div>
 
                 <div>
+                    <label htmlFor="new-order-supply-quantity">Quantity Ordered:</label>
+                    <input type="number" placeholder="0" id="new-order-supply-quantity" />
+                </div> */}
 
-                </div>
-
-                <input type="text" placeholder="Item Name" id="item-name" />
-                <input type="text" placeholder="Item Name" id="item-name" />
-                <input type="text" placeholder="Item Name" id="item-name" />
-
-
+                <button className="new-order-submit" type="submit">Add Supply</button>
 
             </form>
 
