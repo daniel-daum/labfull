@@ -22,12 +22,10 @@ function Active_Orders() {
                    
                 </div>
 
-                
-                
 
-              
-
+                
             </div>
+
             
 
 

@@ -6,8 +6,8 @@ import Navbar from "../../components/navbar/navbar";
 
 import Avatar from '@mui/material/Avatar';
 import { deepOrange } from "@mui/material/colors"
+import Table from "../../components/table/Table";
 
-import Blank from "../../components/blank/blank";
 
 
 
@@ -29,7 +29,7 @@ function Inventory() {
                 <div className="inventory-table">
 
 
-                    <Blank />
+                    <Table />
                     
                 </div>
 
