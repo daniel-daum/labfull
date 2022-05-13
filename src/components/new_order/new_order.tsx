@@ -1,61 +1,61 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./new_order.css"
 
-function New_Order() {
+export default function New_Order() {
 
-    // const [supply_name, setName] = useState("")
-    // const [quantity, setQuantity] = useState("")
-   
+    const [supply_name, setName] = useState("")
+    const [quantity, setQuantity] = useState("")
+    const [date, setDate] = useState("")
+    const [temp, setTemp] =useState("")
 
-    async function submitForm(event: React.FormEvent<HTMLFormElement>) {
+
+    function submitForm(event: React.FormEvent<HTMLFormElement>) {
 
         event.preventDefault()
-        
-        const res = await axios.get("http://localhost:3001/data")
 
-        alert(res)
+        alert(`Supply Name: ${supply_name}\n Quantity: ${quantity}\n Date: ${date}\n Temp:${temp}`)
 
     }
-
-
-
-
 
     return (
         <div className="new-order">
 
-            <div className="new-order-title">Add New Order</div>
+            <div></div>
 
-            <form className="new-order-form" onSubmit={submitForm} >
+            <form onSubmit={submitForm}>
 
-                <label htmlFor="nametest">Supply Name: </label>
-                {/* <input type="text"  id="nametest" onChange={(e) => setName(e.target.value)}/> */}
+                <div>Add New Supply Order</div>
 
-                {/* <div>
-                    <label htmlFor="new-order-suply-name">Supply Name:</label>
-                    <input type="text" placeholder="Product Name" id="new-order-suply-name" />
+                <div className="new-order-q-name">
+                    <label htmlFor="new-order-input-name">Supply Name</label>
+                    <input type="text" className="new-order-input-name" id="new-order-input-name" placeholder="Ex: Pipet Tips" onChange={(e) => setName(e.target.value)} />
                 </div>
 
-                <div>
-                    <label htmlFor="new-order-supply-date">Date Ordered:</label>
-                    <input type="date" placeholder="Item Name" id="new-order-supply-date" />
+                <div className="new-order-q-quantity">
+                    <label htmlFor="new-order-input-quantity" >Quantity</label>
+                    <input type="number" className="new-order-input-quantity" id="new-order-input-quantity" placeholder="0" onChange={(e) => setQuantity(e.target.value)}/>
                 </div>
 
-                <div>
-                    <label htmlFor="new-order-supply-quantity">Quantity Ordered:</label>
-                    <input type="number" placeholder="0" id="new-order-supply-quantity" />
-                </div> */}
+                <div className="new-order-q-date">
+                    <label htmlFor="new-order-input-date">Date Ordered</label>
+                    <input type="date" name="new-order-input-date" id="new-order-input-date" className="new-order-input-date" onChange={(e) => setDate(e.target.value)}/>
+                </div>
 
-                <button className="new-order-submit" type="submit">Add Supply</button>
+                <div className="new-order-q-temp">
+                    <label htmlFor="">Temperature Sensitive</label>
+                    <select name="new-order-input-temp" id="new-order-input-temp" className="new-order-input-temp" onChange={(e) => setTemp(e.target.value)}>
+                        <option value="">-- Please Select an Option --</option>
+                        <option value="Freezer">Freezer</option>
+                        <option value="fridge">Fridge</option>
+                        <option value="no">No</option>
+                    </select>
+
+                </div>
+
+                <button type="submit" className="new-order-form-submit">Add Item to Inventory</button>
 
             </form>
-
-
-
-
         </div>
+
     )
 }
-
-export default New_Order;
