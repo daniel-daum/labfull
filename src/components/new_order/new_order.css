@@ -1,17 +1,23 @@
 .new-order {
     display: flex;
     flex-direction: column;
-    width: 30em;
+    width: 25em;
     border: 1px solid white;
     background-color: white;
     border-radius: .9em;
     box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);
     padding: 1em;
     margin: 1em;
-    font-family: 'Montserrat', sans-serif;
     position: relative;
   
     
+
+}
+
+.new-order-labels{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    margin-bottom: .4em;
 
 }
 
@@ -20,12 +26,15 @@
     flex-direction: column;
     font-weight: 600;
     margin-top: 1em;
+    
 }
 
 .new-order-input-name{
     height: 2em;
     width: auto;
+    background-color: #FAFAFA;
 }
+
 
 .new-order-q-quantity {
     display: flex;
@@ -37,6 +46,7 @@
 .new-order-input-quantity{
     height: 2em;
     width: auto;
+    background-color: #FAFAFA;
 }
 
 .new-order-q-date{
@@ -49,6 +59,7 @@
 .new-order-input-date{
     height: 2em;
     width: auto;
+    background-color: #FAFAFA;
 }
 
 .new-order-q-temp{
@@ -61,10 +72,23 @@
 .new-order-input-temp{
     height: 2em;
     width: auto;  
+    background-color: #FAFAFA;
+}
+
+.new-order-form-submit-wrapper{
+    display: flex;
+    flex-direction: column;
 }
 
 .new-order-form-submit{
     margin-top: 1.5em;
     height: 2em;
     width: auto;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-order-form-submit:hover{
+    cursor: pointer;
 }
