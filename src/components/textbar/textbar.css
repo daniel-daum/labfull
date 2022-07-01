@@ -1,0 +1,15 @@
+
+.textbar{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: .03rem;
+    margin: 1em;
+}
+
+.textbar-input{
+    height: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .03rem;
+}
+
